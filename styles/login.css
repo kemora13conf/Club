@@ -1,0 +1,240 @@
+@font-face {
+    font-family: azonix;
+    src: url(../fonts/Azonix.otf);
+}
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: garet;
+    src: url(../fonts/Garet-Book.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: caviar;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: orange;
+    color: white;
+    display: flex;
+    backdrop-filter: blur(17px);
+}
+#name{
+    margin-left: 10px;
+    margin-right: auto;
+}
+#name a{
+    color: white;
+}
+header button{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+header ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+header ul li a{
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+header ul li a:hover{
+    background-color: #262626;
+    font-size: 17px;
+}
+
+.container{
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-header{
+    max-width: 350px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    background-color: #262626;
+    margin-bottom: 10px;
+}
+
+.forms{
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 15px;
+    background: orange;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+.form-group label{
+    font-size: 17px;
+    font-weight: bold;
+    color: #262626;
+    margin-bottom: 5px;
+}
+.form-group input{
+    padding: 7px 7px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.checkbox{
+    flex-direction: row;
+    align-items: center;
+}
+.checkbox input{
+    width: 20px;
+    height: 20px;
+    margin: 0px 7px;
+    cursor: pointer;
+}
+.checkbox label{
+    margin: auto 0px;
+}
+
+.form-group .submit{
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+    background-color: #262626;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form-group .submit:hover{
+    background: white;
+    color: #262626;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.powered{
+    font-size: 20px;
+    color: #262626;
+}
+.powered span{
+    color: red;
+}
+.copy{
+    color: #262626;
+}
+
+@media only screen and (max-width: 720px){
+    header ul{
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        height: calc(100vh - 50px);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: orange;
+        transition: all .5s;
+    }
+    .nav{
+        left: 0;
+    }
+    header button{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header button span{
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+    header button span::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: white;
+        top: -9px;
+        transition: all .3s ease-in-out;
+    }
+    header button span::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: white;
+        top: 9px;
+        transition: all .3s ease-in-out;
+    }
+    .btn span{
+        background: transparent;
+        transition: all .3s ease-in-out;
+    }
+    .btn span::before{
+        top: 0;
+        transform: rotate(-45deg);
+        transition: all .3s ease-in-out;
+    }
+    .btn span::after{
+        top: 0;
+        transform: rotate(45deg);
+        transition: all .3s ease-in-out;
+    }
+
+    header ul li{
+        width: 100%;
+    }
+    header ul li a{
+        width: 100%;
+    }
+}

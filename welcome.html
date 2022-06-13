@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/welcome.css">
+</head>
+<body>
+    <header class="header">
+        <h2 id="name"><a href="/welcome.html">Sport Club</a></h2>
+        <ul id='nav'>
+            <li><a href="#about_us">About</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li>
+                <a href="login.html">Login</a>
+                <ul>
+                    <li><a href="#">Reset password</a></li>
+                    <li><a href="inscription.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" id="navbtn">
+            <span></span>
+        </button>
+    </header>
+    <div class="container" id="container">
+        <!-- <div class="slider">
+            <img src="" alt="">
+        </div> -->
+        <section class="main-section">
+            <div class="cover">
+                <h1 class="title">Unlimited <br> offers in our <span>sport club</span> </h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsam.
+                </p>
+                <button id="started">Get Strated</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="about-title spe_title" id="about_us">
+        <h1>About Us</h1>
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="about_container">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+    <div class="backg" >
+        <div class="founder">
+            <img src="images/founders/abdelghani.jpg" >
+            <div class="about_founder">
+                <h2>Abdelghani el mouak</h2>
+                <div class="line-container">
+                    <div class="line" style="background: orange;"></div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="founder founder-reverse">
+            <img src="images/founders/nezar.jpg">
+            <div class="about_founder">
+                <h2>Nezar Ezzouhiri</h2>
+                <div class="line-container">
+                    <div class="line" style="background: orange;"></div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="of-title spe_title">
+        <h1>Offers</h1>
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="offers contain" id="offers">
+        <div class="card">
+            <div class="percent">
+                0 <sup>%</sup>
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias pariatur accusantium veritatis eaque at quis?
+            </div>
+            <div class="order" id="order">
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="percent">
+                10 <sup>%</sup>
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias pariatur accusantium veritatis eaque at quis?
+            </div>
+            <div class="order" id="order">
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="percent">
+                25 <sup>%</sup>
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias pariatur accusantium veritatis eaque at quis?
+            </div>
+            <div class="order" id="order">
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback" id="contact">
+        <div class="aboutus">
+            <h1 class="feedhead">Contact US</h1>
+            <div>
+                <span>Phone: </span> <p>+212653179026</p>
+                <span>Email: </span> <p>Abdelghanielmouak@gmail.com</p>
+                <span>Address: </span> <p>Azli,Marrakech,Morocco</p>
+            </div>
+        </div>
+        <form action="" class="forms">
+            <div class="form-group">
+                <label for="fl-name">Full Name</label>
+                <input type="text" id="fl-name" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="msg">Your Message</label>
+                <textarea id="msg" cols="30" rows="10" placeholder="Type..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="powered"><span>Powered by</span> <br> Abdelghani El Mouak and Nezar Ezzouhiri</div>
+        <div class="copy">Copyright &copy; 2022</div>
+    </footer>
+
+    <script src="scripts/welcome.js"></script>
+</body>
+</html>
